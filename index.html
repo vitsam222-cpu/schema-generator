@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schema.org JSON-LD Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="layout">
+    <section class="panel">
+      <h2>Пресеты</h2>
+      <div id="presets" class="preset-list"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Типы разметки</h2>
+      <div id="types" class="type-list"></div>
+      <button id="clearBtn" class="secondary">Очистить форму</button>
+    </section>
+
+    <section class="panel forms-output">
+      <div>
+        <h2>Формы</h2>
+        <div id="forms"></div>
+      </div>
+      <div>
+        <h2>JSON-LD</h2>
+        <button id="copyBtn">Копировать</button>
+        <pre id="output"></pre>
+        <div id="errors" class="errors"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
